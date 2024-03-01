@@ -1,0 +1,103 @@
+.header {
+    padding: 19px 0;
+
+    .header__container {
+
+        .header__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 19px;
+
+            .header__logo {}
+
+            .header__location {
+                display: flex;
+                column-gap: 12px;
+                max-width: 22%;
+                align-items: center;
+
+                svg {
+                    min-width: 44px;
+                    aspect-ratio: 1;
+                }
+
+                p {
+                    font-weight: medium;
+                    font-size: 1.6rem;
+                    line-height: 22/16 * 100%;
+                    color: #6e5e56;
+                }
+            }
+
+            .header__phone {
+                display: flex;
+                column-gap: 12px;
+                max-width: 20%;
+                align-items: center;
+
+                svg {
+                    min-width: 44px;
+                    aspect-ratio: 1;
+                }
+
+                .header__phone__right {
+                
+                    p {
+
+                        &:first-child {
+                            font-weight: bold;
+                            font-size: 1.8rem;
+                            line-height: 28/18 * 100%;
+                            color: #6E5E56;
+                        }
+
+                        &:last-child {
+                            padding-left: 16px;
+                            background-image: url("../assets/images/header/phone-background.svg");
+                            background-repeat: no-repeat;
+                            background-position: left center;
+                            font-weight: medium;
+                            font-size: 1.4rem;
+                            line-height: 155%;
+                            color: #6E5E56;
+                        }
+                    }
+                }
+            }
+
+            .header__social-media {
+                display: flex;
+                column-gap: 10px;
+            }
+
+            .header__button {
+                padding: 18px 26.5px
+            }
+        }
+
+        hr {
+            width: 100%;
+            height: 1px;
+            background-color: #E4E1DC;
+            margin: 0 0 18px;
+        }
+
+        .header__nav {
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
