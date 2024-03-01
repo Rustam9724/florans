@@ -154,6 +154,7 @@
 .welcome-section .welcome-section__container .welcome-section__description {
   max-width: 559px;
   color: #302A26;
+  padding: 9.9% 0 13%;
 }
 .welcome-section .welcome-section__container .welcome-section__description .welcome-section__title {
   font-weight: 600;
@@ -165,10 +166,25 @@
 .welcome-section .welcome-section__container .welcome-section__description .welcome-section__title span {
   color: #44881F;
 }
+@media (max-width: 899px) {
+  .welcome-section .welcome-section__container .welcome-section__description .welcome-section__title {
+    font-size: 3.45rem;
+  }
+}
+@media (max-width: 339px) {
+  .welcome-section .welcome-section__container .welcome-section__description .welcome-section__title {
+    font-size: 2.6rem;
+  }
+}
 .welcome-section .welcome-section__container .welcome-section__description .welcome-section__text {
   font-size: 1.8rem;
   line-height: 155%;
   margin: 0 0 40px;
+}
+@media (max-width: 424px) {
+  .welcome-section .welcome-section__container .welcome-section__description .welcome-section__text {
+    font-size: 1.35rem;
+  }
 }
 .welcome-section .welcome-section__container .welcome-section__description .welcome-section__button {
   padding: 20.5px 46px;
@@ -176,6 +192,35 @@
 .welcome-section .welcome-section__container .welcome-section__image {
   width: 49.5%;
   aspect-ratio: 603/673;
+  position: relative;
+  min-width: 49.5%;
+}
+.welcome-section .welcome-section__container .welcome-section__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 774px) {
+  .welcome-section .welcome-section__container .welcome-section__image {
+    width: 100%;
+  }
+}
+@media (max-width: 774px) {
+  .welcome-section .welcome-section__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
