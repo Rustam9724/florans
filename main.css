@@ -138,6 +138,46 @@
   color: #302A26;
 }
 
+.welcome-section {
+  background-image: url("../assets/images/welcome-section/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome-section .welcome-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.welcome-section .welcome-section__container .welcome-section__description {
+  max-width: 559px;
+  color: #302A26;
+}
+.welcome-section .welcome-section__container .welcome-section__description .welcome-section__title {
+  font-weight: 600;
+  font-size: 4.6rem;
+  line-height: 125%;
+  margin: 0 0 30px;
+  text-transform: uppercase;
+}
+.welcome-section .welcome-section__container .welcome-section__description .welcome-section__title span {
+  color: #44881F;
+}
+.welcome-section .welcome-section__container .welcome-section__description .welcome-section__text {
+  font-size: 1.8rem;
+  line-height: 155%;
+  margin: 0 0 40px;
+}
+.welcome-section .welcome-section__container .welcome-section__description .welcome-section__button {
+  padding: 20.5px 46px;
+}
+.welcome-section .welcome-section__container .welcome-section__image {
+  width: 49.5%;
+  aspect-ratio: 603/673;
+}
+
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
   padding: 0;
   margin: 0;
