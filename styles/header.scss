@@ -8,14 +8,23 @@
             justify-content: space-between;
             align-items: center;
             margin: 0 0 19px;
+            flex-wrap: wrap;
+            row-gap: 20px;
 
-            .header__logo {}
+            @media (max-width: 1124px) {
+                .header__logo {
+                    flex-basis: 100%;
+                }
+            }
+
 
             .header__location {
                 display: flex;
                 column-gap: 12px;
-                max-width: 22%;
+                max-width: 266px;
+                min-width: 266px;
                 align-items: center;
+                padding: 0 10px;
 
                 svg {
                     min-width: 44px;
@@ -33,8 +42,9 @@
             .header__phone {
                 display: flex;
                 column-gap: 12px;
-                max-width: 20%;
                 align-items: center;
+                min-width: 232px;
+                padding: 0 10px;
 
                 svg {
                     min-width: 44px;
@@ -69,10 +79,17 @@
             .header__social-media {
                 display: flex;
                 column-gap: 10px;
+                padding: 0 10px;
             }
 
             .header__button {
                 padding: 18px 26.5px
+            }
+        }
+
+        @media (max-width: 763px) {
+            .header__top {
+                justify-content: start;
             }
         }
 
@@ -88,9 +105,17 @@
             ul {
                 display: flex;
                 justify-content: space-between;
+                flex-wrap: wrap;
+                row-gap: 10px;
 
                 li {
+                    padding: 0 5px;
+                }
+            }
 
+            @media (max-width: 386px) {
+                ul {
+                    justify-content: start;
                 }
             }
         }
