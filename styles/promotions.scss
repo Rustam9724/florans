@@ -7,21 +7,50 @@
     justify-content: center;
 
     .promotions__arrow {
-        width: 48px;
+        min-width: 48px;
         aspect-ratio: 1;
         background-color: #62A92D;
         border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background-color: white;
+            border: 1px solid #62A92D;
+
+            svg {
+                
+                path {
+                    stroke: #62A92D
+                }
+            }
+        }
 
         &._right {
             transform: rotate(180deg);
         }
     }
 
+    @media (max-width: 774px) {
+        .promotions__arrow {
+            display: none;
+        }
+    }
+
     .promotions__container {
         margin: 0;
+        max-width: 1082px;
+        flex-shrink: 1;
+    }
+
+    @media (max-width: 1224px) {
+        .promotions__container {
+            width: 75%;
+            margin: 0;
+        }
     }
     
     .promotions-slider {
@@ -29,9 +58,9 @@
         overflow-y: visible;
         overflow-x: hidden;
         min-height: 522px;
-        
-        .promotions-slider__wrapper {
-        }
+        max-width: 100%;
+        min-width: none;
+        align-items: stretch;
         
         .promotions__pagination {
             position: absolute;
@@ -54,15 +83,17 @@
             }
         }
 
-        
-
         .promotions-slider__wrapper {
+            display: flex;
+            align-items: stretch;
 
             .promotions-slider__item {
                 border-radius: 16px;
                 cursor: pointer;
                 background-color: white;
                 border: 1px solid #EBE9E6;
+                min-height: 472px;
+                align-self: stretch;
 
                 .promotions-slider__item__image {
                     border-radius: 16px;
@@ -104,11 +135,43 @@
                         margin: 0 0 33px;
                     }
 
+                    @media (max-width: 400px) {
+                        .promotions-slider__item__description {
+                            font-size: 1.2rem;
+                        } 
+                    }
+
                     .promotions-slider__slide__link {
-                        
+                        margin: auto 0 0;
                     }
                 }
+
+                
             }
+        }
+    }
+
+    @media (max-width: 774px) {
+        .promotions-slider {
+            min-height: 600px;
+        }
+    }
+
+    @media (max-width: 674px) {
+        .promotions-slider {
+            min-height: 550px;
+        }
+    }
+
+    @media (max-width: 474px) {
+        .promotions-slider {
+            min-height: 525px;
+        }
+    }
+
+    @media (max-width: 374px) {
+        .promotions-slider {
+            min-height: 500px;
         }
     }
 }

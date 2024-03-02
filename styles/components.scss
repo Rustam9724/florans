@@ -7,6 +7,13 @@
     font-size: 1.4rem;
     line-height: 155%;
     border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: white;
+        color: #62A92D;
+        outline: 1px solid #62A92D;
+    }
 }
 
 // text
