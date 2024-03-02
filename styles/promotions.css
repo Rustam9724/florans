@@ -16,6 +16,9 @@
     .promotions .promotions__container {
       width: 75%;
       margin: 0; } }
+  @media (max-width: 774px) {
+    .promotions .promotions__container {
+      width: 100%; } }
   .promotions .promotions-slider {
     position: relative;
     overflow-y: visible;
@@ -88,6 +91,9 @@
   @media (max-width: 674px) {
     .promotions .promotions-slider {
       min-height: 550px; } }
+  @media (min-width: 540px) and (max-width: 800px) and (min-height: 720px) and (max-height: 1280px) {
+    .promotions .promotions-slider {
+      min-height: 700px; } }
   @media (max-width: 474px) {
     .promotions .promotions-slider {
       min-height: 525px; } }
