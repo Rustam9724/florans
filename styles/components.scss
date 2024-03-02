@@ -1,3 +1,5 @@
+// button
+
 ._btn {
     background-color: #62A92D;
     color: white;
@@ -7,8 +9,52 @@
     border-radius: 50px;
 }
 
+// text
 .text-1 {
     font-size: 1.6rem;
-    line-height: 115%;
     color: #302A26;
+}
+
+.text-2 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 155%;
+    color: rgba(48, 42, 38, 0.6);
+}
+
+.text-3 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 125%;
+    color: #302A26;
+}
+
+// title
+
+.section-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 125%;
+    letter-spacing: -0.3px;
+    color: #302A26;
+    margin: 0 0 40px;
+
+    span {
+        color: #44881F;
+    }
+}
+
+// link
+
+._link {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 155%;
+    color: #44881F;
+    padding-right: 16px;
+    background-image: url("../assets/images/components/link.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-bottom: 1px solid #44881F;
 }

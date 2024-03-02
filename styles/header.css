@@ -68,7 +68,8 @@
     flex-wrap: wrap;
     row-gap: 10px; }
     .header .header__container .header__nav ul li {
-      padding: 0 5px; }
+      padding: 0 5px;
+      line-height: 115%; }
   @media (max-width: 386px) {
     .header .header__container .header__nav ul {
       justify-content: start; } }
