@@ -5,23 +5,6 @@
   align-items: center;
   column-gap: 20px;
   justify-content: center; }
-  .promotions .promotions__arrow {
-    min-width: 48px;
-    aspect-ratio: 1;
-    background-color: #62A92D;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.2s ease-in; }
-    .promotions .promotions__arrow:hover {
-      background-color: white;
-      border: 1px solid #62A92D; }
-      .promotions .promotions__arrow:hover svg path {
-        stroke: #62A92D; }
-    .promotions .promotions__arrow._right {
-      transform: rotate(180deg); }
   @media (max-width: 774px) {
     .promotions .promotions__arrow {
       display: none; } }

@@ -49,4 +49,23 @@
   background-position: right center;
   border-bottom: 1px solid #44881F; }
 
+._arrow {
+  min-width: 48px;
+  max-width: 48px;
+  aspect-ratio: 1;
+  background-color: #62A92D;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in; }
+  ._arrow:hover {
+    background-color: white;
+    border: 1px solid #62A92D; }
+    ._arrow:hover svg path {
+      stroke: #62A92D; }
+  ._arrow._right {
+    transform: rotate(180deg); }
+
 /*# sourceMappingURL=components.css.map */
