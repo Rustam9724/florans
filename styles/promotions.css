@@ -11,7 +11,25 @@
   .promotions .promotions__container {
     margin: 0;
     max-width: 1082px;
-    flex-shrink: 1; }
+    flex-shrink: 1;
+    position: relative; }
+    .promotions .promotions__container .promotions__pagination {
+      position: absolute;
+      z-index: 10;
+      width: max-content;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%); }
+      .promotions .promotions__container .promotions__pagination .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid #44881F;
+        background-color: #F5F5F5; }
+        .promotions .promotions__container .promotions__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          width: 12px;
+          height: 12px;
+          background-color: #44881F; }
   @media (max-width: 1224px) {
     .promotions .promotions__container {
       width: 75%;
@@ -20,27 +38,10 @@
     .promotions .promotions__container {
       width: 100%; } }
   .promotions .promotions-slider {
-    position: relative;
-    overflow-y: visible;
     overflow-x: hidden;
-    min-height: 522px;
     max-width: 100%;
     min-width: none;
     align-items: stretch; }
-    .promotions .promotions-slider .promotions__pagination {
-      position: absolute;
-      z-index: 10;
-      align-items: center; }
-      .promotions .promotions-slider .promotions__pagination .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border: 1px solid #44881F;
-        background-color: #F5F5F5; }
-        .promotions .promotions-slider .promotions__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-          width: 12px;
-          height: 12px;
-          background-color: #44881F; }
     .promotions .promotions-slider .promotions-slider__wrapper {
       display: flex;
       align-items: stretch; }
@@ -85,20 +86,5 @@
               font-size: 1.2rem; } }
           .promotions .promotions-slider .promotions-slider__wrapper .promotions-slider__item .promotions-slider__item__text .promotions-slider__slide__link {
             margin: auto 0 0; }
-  @media (max-width: 774px) {
-    .promotions .promotions-slider {
-      min-height: 600px; } }
-  @media (max-width: 674px) {
-    .promotions .promotions-slider {
-      min-height: 550px; } }
-  @media (min-width: 540px) and (max-width: 800px) and (min-height: 720px) and (max-height: 1280px) {
-    .promotions .promotions-slider {
-      min-height: 700px; } }
-  @media (max-width: 474px) {
-    .promotions .promotions-slider {
-      min-height: 525px; } }
-  @media (max-width: 374px) {
-    .promotions .promotions-slider {
-      min-height: 500px; } }
 
 /*# sourceMappingURL=promotions.css.map */

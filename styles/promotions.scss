@@ -16,34 +16,16 @@
         margin: 0;
         max-width: 1082px;
         flex-shrink: 1;
-    }
-
-    @media (max-width: 1224px) {
-        .promotions__container {
-            width: 75%;
-            margin: 0;
-        }
-    }
-
-    @media (max-width: 774px) {
-        .promotions__container {
-            width: 100%;
-        }
-    }
-    
-    .promotions-slider {
         position: relative;
-        overflow-y: visible;
-        overflow-x: hidden;
-        min-height: 522px;
-        max-width: 100%;
-        min-width: none;
-        align-items: stretch;
-        
+
         .promotions__pagination {
             position: absolute;
             z-index: 10;
-            align-items: center;
+            width: max-content;
+            // right: 0;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
 
             .swiper-pagination-bullet {
                 width: 10px;
@@ -60,6 +42,28 @@
 
             }
         }
+    }
+
+    @media (max-width: 1224px) {
+        .promotions__container {
+            width: 75%;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 774px) {
+        .promotions__container {
+            width: 100%;
+        }
+    }
+    
+    .promotions-slider {
+        overflow-x: hidden;
+        max-width: 100%;
+        min-width: none;
+        align-items: stretch;
+        
+        
 
         .promotions-slider__wrapper {
             display: flex;
@@ -129,35 +133,35 @@
         }
     }
 
-    @media (max-width: 774px) {
-        .promotions-slider {
-            min-height: 600px;
-        }
-    }
+    // @media (max-width: 774px) {
+    //     .promotions-slider {
+    //         min-height: 600px;
+    //     }
+    // }
 
-    @media (max-width: 674px) {
-        .promotions-slider {
-            min-height: 550px;
-        }
-    }
+    // @media (max-width: 674px) {
+    //     .promotions-slider {
+    //         min-height: 550px;
+    //     }
+    // }
 
-    @media (min-width: 540px) and (max-width: 800px) and (min-height: 720px) and (max-height: 1280px) {
-        .promotions-slider {
-            min-height: 700px;
-        }
-    }
+    // @media (min-width: 540px) and (max-width: 800px) and (min-height: 720px) and (max-height: 1280px) {
+    //     .promotions-slider {
+    //         min-height: 700px;
+    //     }
+    // }
 
-    @media (max-width: 474px) {
-        .promotions-slider {
-            min-height: 525px;
-        }
-    }
+    // @media (max-width: 474px) {
+    //     .promotions-slider {
+    //         min-height: 525px;
+    //     }
+    // }
 
-    @media (max-width: 374px) {
-        .promotions-slider {
-            min-height: 500px;
-        }
-    }
+    // @media (max-width: 374px) {
+    //     .promotions-slider {
+    //         min-height: 500px;
+    //     }
+    // }
 }
 
 
