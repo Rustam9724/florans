@@ -1,4 +1,4 @@
-// ---- СЛАЙДЕР В СЕКЦИИ АКЦИИ ------- ..
+// ---- СЛАЙДЕР В СЕКЦИИ АКЦИИ -------//
 let slidesCount;
 if (window.innerWidth > 1149) {
     slidesCount = 3;
