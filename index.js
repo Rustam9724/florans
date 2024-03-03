@@ -21,3 +21,15 @@ new Swiper('.promotions-slider', {
         clickable: true,
     }
 });
+
+new Swiper('.center-slider', {
+    navigation: {
+        nextEl: '.center-slider__arrow._left',
+        prevEl: '.center-slider__arrow._right',
+    },
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 88,
+    centeredSlides: true,
+    initialSlide: 1,
+})
