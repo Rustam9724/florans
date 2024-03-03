@@ -670,6 +670,9 @@
   .center .center__container .center__description .center__description__text p {
     font-size: 1.2rem;
   }
+  .center .center__container .center__description .center__description__text p.text-4 {
+    font-size: 1.65rem;
+  }
 }
 @media (max-width: 1074px) {
   .center .center__container .center__description .center__description__text {
