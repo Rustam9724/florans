@@ -663,16 +663,29 @@
 .center .center__container .center__description .center__description__text p:not(:last-child) {
   margin: 0 0 20px;
 }
+@media (max-width: 349px) {
+  .center .center__container .center__description .center__description__text .center__title {
+    font-size: 2.85rem;
+  }
+  .center .center__container .center__description .center__description__text p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1074px) {
+  .center .center__container .center__description .center__description__text {
+    max-width: none;
+  }
+}
 .center .center__container .center__description .center__description__stat {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 20px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .center .center__container .center__description .center__description__stat .stat-item {
   max-width: 230px;
@@ -702,6 +715,35 @@
   line-height: 125%;
   letter-spacing: -0.3px;
   color: #44881F;
+}
+.center .center__container .center__description .center__description__stat .stat-item .stat-item__text {
+  text-align: center;
+}
+@media (max-width: 524px) {
+  .center .center__container .center__description .center__description__stat .stat-item {
+    max-width: 173px;
+    min-width: 173px;
+  }
+  .center .center__container .center__description .center__description__stat .stat-item .stat-item__count {
+    font-size: 3.6rem;
+  }
+  .center .center__container .center__description .center__description__stat .stat-item .stat-item__text {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .center .center__container .center__description .center__description__stat {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 1074px) {
+  .center .center__container .center__description {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 30px;
+  }
 }
 .center .center-slider {
   margin: 0 auto;
