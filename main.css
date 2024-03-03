@@ -972,6 +972,11 @@
   z-index: -1;
 }
 
+@media (max-width: 699px) {
+  .equipment {
+    padding: 15% 0;
+  }
+}
 .faq {
   padding: 8.2% 0;
   background-image: url("../assets/images/faq/background.jpg");
@@ -1023,11 +1028,20 @@
   font-size: 1.8rem;
   line-height: 145%;
   color: #302A26;
+  padding-right: 5px;
 }
 .faq .faq__container .faq__main .faq__questions .faq__question .faq__question__text p {
   margin: 20px 0 0;
   line-height: 155%;
   display: none;
+}
+@media (max-width: 549px) {
+  .faq .faq__container .faq__main .faq__questions .faq__question .faq__question__text .faq__question__title {
+    font-size: 1.35rem;
+  }
+  .faq .faq__container .faq__main .faq__questions .faq__question .faq__question__text p {
+    font-size: 1.2rem;
+  }
 }
 .faq .faq__container .faq__main .faq__questions .faq__question .faq__question__arrow {
   max-width: 40px;
@@ -1040,6 +1054,16 @@
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   background-color: #42861E;
+}
+@media (max-width: 974px) {
+  .faq .faq__container .faq__main .faq__questions {
+    max-width: 85%;
+  }
+}
+@media (max-width: 599px) {
+  .faq .faq__container .faq__main .faq__questions {
+    max-width: 95%;
+  }
 }
 .faq .faq__container .faq__main .form-faq {
   padding: 30px 40px 40px;
@@ -1119,6 +1143,11 @@
   aspect-ratio: 300/76;
   resize: none;
 }
+@media (max-width: 374px) {
+  .faq .faq__container .faq__main .form-faq textarea {
+    aspect-ratio: 2.9;
+  }
+}
 .faq .faq__container .faq__main .form-faq .form-faq__agree {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1155,6 +1184,38 @@
 .faq .faq__container .faq__main .form-faq .faq-button {
   width: 100%;
   padding: 18px;
+}
+@media (max-width: 974px) {
+  .faq .faq__container .faq__main .form-faq {
+    max-width: 43%;
+  }
+}
+@media (max-width: 749px) {
+  .faq .faq__container .faq__main .form-faq {
+    max-width: 57%;
+  }
+}
+@media (max-width: 574px) {
+  .faq .faq__container .faq__main .form-faq {
+    max-width: 76%;
+  }
+}
+@media (max-width: 449px) {
+  .faq .faq__container .faq__main .form-faq {
+    max-width: 95%;
+  }
+}
+@media (max-width: 974px) {
+  .faq .faq__container .faq__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
