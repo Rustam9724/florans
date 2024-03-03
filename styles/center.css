@@ -63,16 +63,67 @@
         flex-wrap: wrap;
         row-gap: 30px; } }
   .center .center-slider {
-    margin: 0 auto;
+    width: 100%;
     display: flex;
+    column-gap: 2.3vw;
+    align-items: center;
     justify-content: center;
-    max-width: 100vw; }
-    .center .center-slider .center-slider__wrapper {
-      max-width: 716px; }
-      .center .center-slider .center-slider__wrapper .center-slider__item {
-        max-width: 500px;
+    flex-wrap: wrap;
+    row-gap: 40px; }
+    .center .center-slider .center-slider__slide {
+      position: relative;
+      aspect-ratio: 1; }
+      .center .center-slider .center-slider__slide._small {
+        max-width: 26vw;
+        min-width: 26vw; }
+      .center .center-slider .center-slider__slide._big {
+        max-width: 30vw;
+        min-width: 30vw; }
+      @media (max-width: 1024px) {
+        .center .center-slider .center-slider__slide._small {
+          display: none; }
+        .center .center-slider .center-slider__slide._big {
+          max-width: 40vw;
+          min-width: 40vw; } }
+      @media (max-width: 768px) {
+        .center .center-slider .center-slider__slide._big {
+          max-width: 53vw;
+          min-width: 53vw; } }
+      @media (max-width: 499px) {
+        .center .center-slider .center-slider__slide._big {
+          max-width: 71vw;
+          min-width: 71vw; } }
+      .center .center-slider .center-slider__slide img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        object-fit: cover; }
+    .center .center-slider .center-slider__arrow {
+      max-width: 2.5vw;
+      min-width: 2.5vw; }
+    @media (max-width: 1024px) {
+      .center .center-slider .center-slider__arrow {
+        max-width: 48px;
+        min-width: 48px; } }
+    @media (max-width: 1024px) {
+      .center .center-slider .center-slider__arrow {
+        display: none; } }
+    .center .center-slider .center-slider__pagination {
+      display: flex;
+      column-gap: 7px;
+      flex-basis: 100%;
+      justify-content: center; }
+      .center .center-slider .center-slider__pagination div {
+        width: 10px;
         aspect-ratio: 1;
-        position: relative; }
+        border: 1px solid #44881F;
+        border-radius: 50%; }
+        .center .center-slider .center-slider__pagination div._active {
+          width: 12px;
+          background-color: #44881F; }
 
 .center-slider__arrow {
   z-index: 10; }
