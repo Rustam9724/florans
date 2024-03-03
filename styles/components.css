@@ -73,5 +73,9 @@
       stroke: #62A92D; }
   ._arrow._right {
     transform: rotate(180deg); }
+  ._arrow._top {
+    transform: rotate(90deg); }
+  ._arrow._bottom {
+    transform: rotate(270deg); }
 
 /*# sourceMappingURL=components.css.map */

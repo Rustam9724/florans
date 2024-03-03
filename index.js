@@ -1,4 +1,6 @@
-// ---- СЛАЙДЕР В СЕКЦИИ АКЦИИ -------//
+// ---- СЛАЙДЕРЫ  -------//
+
+//Задаю число слайдов в зависимости от ширины экрана 
 let slidesCount;
 if (window.innerWidth > 1149) {
     slidesCount = 3;
@@ -8,6 +10,7 @@ if (window.innerWidth > 1149) {
     slidesCount = 1;
 }
 
+// Слайдер в секции акций
 new Swiper('.promotions-slider', {
     navigation: {
         nextEl: '.promotions__arrow._left',
@@ -22,7 +25,7 @@ new Swiper('.promotions-slider', {
     }
 });
 
-
+// Слайдер в секции оборудования
 new Swiper('.equipment-slider', {
     navigation: {
         nextEl: '.equipment__arrow._left',
@@ -36,3 +39,12 @@ new Swiper('.equipment-slider', {
         clickable: true,
     }
 });
+
+
+// ----- АККОРДЕОН ----- //
+const accordeons = document.querySelectorAll('.faq__question');
+accordeons.forEach(elem => {
+    elem.addEventListener('click', () => {
+        elem.classList.toggle('_active')
+    })
+})

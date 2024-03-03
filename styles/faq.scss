@@ -22,10 +22,29 @@
                     display: flex;
                     align-items: flex-start;
                     justify-content: space-between;
+                    cursor: pointer;
+
+                    &:hover {
+
+                        ._arrow {
+                            background-color: white !important;
+                            border: 1px solid #62A92D !important;
+                        
+                            svg {
+                                
+                                path {
+                                    stroke: #62A92D
+                                }
+                            }
+                        
+                        }
+                    }
 
                     &:not(:last-child) {
                         margin: 0 0 15px;
                     }
+
+                    
 
                     .faq__question__text {
                         
@@ -46,7 +65,22 @@
                     .faq__question__arrow {
                         max-width: 40px;
                         min-width: 40px;
-                        transform: rotate(270deg);
+                    }
+
+                    &._active {
+
+                        .faq__question__text {
+
+                            p {
+                                display: block;
+                            }
+                        }
+
+                        .faq__question__arrow {
+                            transform: rotate(90deg);
+                            background-color: #42861E;
+                        }
+
                     }
                 }
             }
@@ -148,9 +182,4 @@
             }
         }
     }
-}
-
-
-
-._btn {
 }
