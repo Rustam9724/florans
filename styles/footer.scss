@@ -1,0 +1,109 @@
+.footer {
+    padding: 8.2% 0 22px;
+    background-image: url("../assets/images/footer/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .footer__container {
+
+        .logo {
+            margin: 0 0 40px;
+        }
+
+        .footer__top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0 0 40px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            margin: 0 0 20px;
+
+            .footer__block {
+
+                .footer__block__title {
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                    line-height: 125%;
+                    letter-spacing: -0.2px;
+                    color: rgba(255, 255, 255, 0.4);
+                    margin: 0 0 20px;
+                }
+
+                .footer__block__list {
+                    
+                    li {
+                        font-size: 1.6rem;
+                        line-height: 155%;
+                        color: white;
+
+                        &:not(:last-child) {
+                            margin: 0 0 8px;
+                        }
+                    }
+                }
+            }
+
+            .footer__contacts {
+                max-width: 22%;
+
+                .footer__contacts__small-text {
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    line-height: 155%;
+                    color: rgba(255, 255, 255, 0.6);
+                    margin: 0 0 15px;
+                    
+                    &:first-child {
+                        margin: 0 0 10px;
+                    }
+
+                }
+
+                .footer__contacts__phone {
+                    font-weight: 600;
+                    font-size: 2.6rem;
+                    line-height: 125%;
+                    letter-spacing: -0.2px;
+                    color: #D4CBB7;
+
+                    &:nth-child(3) {
+                        margin: 0 0 15px;
+                    }
+                }
+
+                .footer__contacts__item {
+                    display: flex;
+                    column-gap: 12px;
+                    align-items: flex-start;
+
+                    &:not(:last-child) {
+                        margin: 0 0 10px;
+                    }
+
+                    p {
+                        font-weight: 500;
+                        font-size: 1.6rem;
+                        line-height: 135%;
+                        color: white;
+                    }
+                }
+
+                .footer__contacts__social-media {
+                    display: flex;
+                    column-gap: 10px;
+                }
+            }
+        }
+
+        .footer__bottom {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-size: 1.6rem;
+                line-height: 155%;
+                color: white;
+            }
+        }
+    }
+}
