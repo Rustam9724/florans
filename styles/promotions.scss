@@ -63,19 +63,14 @@
         min-width: none;
         align-items: stretch;
         
-        
-
         .promotions-slider__wrapper {
-            display: flex;
-            align-items: stretch;
-
+            
             .promotions-slider__item {
                 border-radius: 16px;
                 cursor: pointer;
                 background-color: white;
                 border: 1px solid #EBE9E6;
                 min-height: 472px;
-                align-self: stretch;
 
                 .promotions-slider__item__image {
                     border-radius: 16px;
@@ -132,43 +127,4 @@
             }
         }
     }
-
-    // @media (max-width: 774px) {
-    //     .promotions-slider {
-    //         min-height: 600px;
-    //     }
-    // }
-
-    // @media (max-width: 674px) {
-    //     .promotions-slider {
-    //         min-height: 550px;
-    //     }
-    // }
-
-    // @media (min-width: 540px) and (max-width: 800px) and (min-height: 720px) and (max-height: 1280px) {
-    //     .promotions-slider {
-    //         min-height: 700px;
-    //     }
-    // }
-
-    // @media (max-width: 474px) {
-    //     .promotions-slider {
-    //         min-height: 525px;
-    //     }
-    // }
-
-    // @media (max-width: 374px) {
-    //     .promotions-slider {
-    //         min-height: 500px;
-    //     }
-    // }
 }
-
-
-.swiper-container {
-}
-
-.swiper-wrapper {
-}
-
-

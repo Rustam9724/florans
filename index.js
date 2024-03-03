@@ -21,3 +21,18 @@ new Swiper('.promotions-slider', {
         clickable: true,
     }
 });
+
+
+new Swiper('.equipment-slider', {
+    navigation: {
+        nextEl: '.equipment__arrow._left',
+        prevEl: '.equipment__arrow._right',
+    },
+    slidesPerView: slidesCount,
+    slidesPerGroup: slidesCount,
+    spaceBetween: 20,
+    pagination: {
+        el: '.equipment__pagination',
+        clickable: true,
+    }
+});
