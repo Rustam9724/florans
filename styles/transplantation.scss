@@ -13,6 +13,12 @@
             max-width: 49%;
         }
 
+        @media (max-width: 768px) {
+            .transplantation__title {
+                max-width: 65%;
+            }
+        }
+
         .transplantation__text {
             max-width: 38%;
             margin: 0 0 40px;
@@ -24,6 +30,17 @@
                     margin: 0 0 20px;
                 }
             }
+        }
+
+        @media (max-width: 768px) {
+            .transplantation__title {
+                max-width: 65%;
+            }
+
+            .transplantation__text {
+                max-width: 95%;
+            }
+
         }
 
         .transplantation__buttons {

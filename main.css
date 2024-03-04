@@ -1647,6 +1647,11 @@
 .transplantation .transplantation__container .transplantation__title {
   max-width: 49%;
 }
+@media (max-width: 768px) {
+  .transplantation .transplantation__container .transplantation__title {
+    max-width: 65%;
+  }
+}
 .transplantation .transplantation__container .transplantation__text {
   max-width: 38%;
   margin: 0 0 40px;
@@ -1656,6 +1661,14 @@
 }
 .transplantation .transplantation__container .transplantation__text p:not(:last-child) {
   margin: 0 0 20px;
+}
+@media (max-width: 768px) {
+  .transplantation .transplantation__container .transplantation__title {
+    max-width: 65%;
+  }
+  .transplantation .transplantation__container .transplantation__text {
+    max-width: 95%;
+  }
 }
 .transplantation .transplantation__container .transplantation__buttons {
   display: -webkit-box;
