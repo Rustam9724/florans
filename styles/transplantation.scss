@@ -1,0 +1,55 @@
+.transplantation {
+    padding: 4.2% 0 6.3%;
+
+    .transplantation__container {
+        background-image: url("../assets/images/transplantation/background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        padding: 3.1% 3.6%;
+        border-radius: 16px;
+
+        .transplantation__title {
+            max-width: 49%;
+        }
+
+        .transplantation__text {
+            max-width: 38%;
+            margin: 0 0 40px;
+
+            p {
+                line-height: 155%;
+
+                &:not(:last-child) {
+                    margin: 0 0 20px;
+                }
+            }
+        }
+
+        .transplantation__buttons {
+            display: flex;
+            column-gap: 15px;
+
+            button {
+
+                &:first-child {
+                    width: 200px;
+                    padding: 20.5px;
+                } 
+
+                &:last-child {
+                    width: 180px;
+                    padding: 20.5px;
+                    background-color: white;
+                    border: 1px solid rgba(68, 136, 31, 0.4);
+                    color: #44881F;
+
+                    &:hover {
+                        background-color: #62A92D;
+                        color: white;
+                    }
+                } 
+            }
+        }
+    }
+}
