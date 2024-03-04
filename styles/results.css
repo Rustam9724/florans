@@ -1,5 +1,7 @@
 .results {
   padding: 8.2% 0; }
+  .results .results__container .result__title {
+    max-width: 50%; }
   .results .results__container .results__main {
     display: flex;
     flex-wrap: wrap;
@@ -35,6 +37,12 @@
       .results .results__container .results__main .result__item .result__item__text {
         font-size: 1.6rem;
         line-height: 155%; }
+    @media (max-width: 1024px) {
+      .results .results__container .results__main .result__item {
+        flex-basis: 46%; } }
+    @media (max-width: 768px) {
+      .results .results__container .results__main .result__item {
+        flex-basis: 92%; } }
   .results .results__container .result__button {
     padding: 20.5px 0;
     text-align: center;

@@ -4,6 +4,7 @@
     .results__container {
         
         .result__title {
+            max-width: 50%;
         }
 
         .results__main {
@@ -49,6 +50,18 @@
                 .result__item__text {
                     font-size: 1.6rem;
                     line-height: 155%;
+                }
+            }
+
+            @media (max-width: 1024px) {
+                .result__item {
+                    flex-basis: 46%;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .result__item {
+                    flex-basis: 92%;
                 }
             }
         }
