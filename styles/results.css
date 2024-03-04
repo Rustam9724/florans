@@ -42,7 +42,8 @@
         flex-basis: 46%; } }
     @media (max-width: 768px) {
       .results .results__container .results__main .result__item {
-        flex-basis: 92%; } }
+        flex-basis: 69%;
+        margin: 0 auto; } }
   .results .results__container .result__button {
     padding: 20.5px 0;
     text-align: center;

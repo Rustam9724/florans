@@ -1554,8 +1554,9 @@
 }
 @media (max-width: 768px) {
   .results .results__container .results__main .result__item {
-    -ms-flex-preferred-size: 92%;
-        flex-basis: 92%;
+    -ms-flex-preferred-size: 69%;
+        flex-basis: 69%;
+    margin: 0 auto;
   }
 }
 .results .results__container .result__button {
@@ -1637,7 +1638,7 @@
   padding: 4.2% 0 6.3%;
 }
 .transplantation .transplantation__container {
-  background-image: url("../assets/images/transplantation/background.jpg");
+  background-image: url("./assets/images/transplantation/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
