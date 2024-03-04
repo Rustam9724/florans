@@ -102,15 +102,150 @@
 
         .header__nav {
 
-            ul {
+            & > ul {
                 display: flex;
                 justify-content: space-between;
                 flex-wrap: wrap;
                 row-gap: 10px;
 
-                li {
+                & > li {
                     padding: 0 5px;
                     line-height: 115%;
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+                    cursor: pointer;
+                    position: relative;
+
+                    a {
+                        color: #302A26;
+                        transition: all 0.2s ease-in;
+                    }
+
+                    &:hover {
+
+                        svg {
+                            transform: rotate(180deg);
+                        }
+
+                        a {
+                            color: #6FB34A;
+                        }
+
+                        .drop-menu {
+                            display: block;
+                        }
+
+                    }
+
+                    .drop-menu {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        transform: translateY(100%);
+                        width: 280px;
+                        border-radius: 16px;
+                        // border: 1px solid #EBE9E6;
+                        display: none;
+
+                        div {
+                            width: 100%;
+                            height: 38px;
+                            background-color: rgba(255, 255, 255, 0);
+                        }
+
+                        & > li {
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            padding: 10px 20px;
+                            margin: 0;
+                            background-color: white;
+                            border-left: 1px solid #EBE9E6;
+                            border-right: 1px solid #EBE9E6;
+
+                            &:nth-child(2) {
+                                padding-top: 16px;
+                                border-radius: 16px 16px 0 0;
+                                border-top: 1px solid #EBE9E6;
+                                
+                            }
+                            
+                            &:nth-child(8) {
+                                padding-bottom: 16px;
+                                border-radius: 0 0 16px 16px;
+                                border-bottom: 1px solid #EBE9E6;
+                            }
+                            
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #E0DDD9;
+                            }
+
+                                &:hover {
+                                    
+                                    .sub-drop-menu {
+                                        display: block;
+                                    }
+                                }
+
+                            p {
+                                font-size: 1.4rem;
+                                line-height: 155%;
+                                color: #302A26;
+                            }
+
+                            &:hover {
+                                background: linear-gradient(to bottom, #62A92D, #44881F);
+                            
+                                p {
+                                    color: white;
+                                }
+
+                                svg {
+                                    transform: rotate(180deg);
+
+                                    path {
+                                        stroke: white
+                                    }
+                                }
+                            }
+                        }
+
+                        .sub-drop-menu {
+                            position: absolute;
+                            top: 38px;
+                            right: 0;
+                            transform: translateX(100%);
+                            background-color: white;
+                            padding: 16px 20px;
+                            border-radius: 16px;
+                            width: 406px;
+                            border: 1px solid #EBE9E6;
+                            display: none;
+
+
+                            li {
+                                font-size: 1.4rem;
+                                line-height: 155%;
+                                color: #302A26;
+
+                                &:not(:first-child) {
+                                    padding-top: 10px;
+                                }
+
+                                &:not(:last-child) {
+                                    padding-bottom: 10px;
+                                    border-bottom: 1px solid #E0DDD9;
+
+                                    &:hover {
+                                        color: #44881F;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
                 }
             }
 
