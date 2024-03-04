@@ -1578,6 +1578,9 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
 }
 .ratings .ratings__container .ratings__main .item-rating {
   border-radius: 16px;
@@ -1615,6 +1618,19 @@
   font-size: 1.6rem;
   line-height: 155%;
   color: #302A26;
+}
+@media (max-width: 1024px) {
+  .ratings .ratings__container .ratings__main .item-rating {
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
+  }
+}
+@media (max-width: 768px) {
+  .ratings .ratings__container .ratings__main .item-rating {
+    -ms-flex-preferred-size: 95%;
+        flex-basis: 95%;
+    margin: 0 auto;
+  }
 }
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
