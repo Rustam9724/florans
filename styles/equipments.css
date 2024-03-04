@@ -1,6 +1,6 @@
 .equipment {
   padding: 8.2% 0;
-  background-image: url("../assets/images/equipment/background.jpg");
+  background-image: url("./assets/images/equipment/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;

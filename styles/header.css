@@ -41,7 +41,7 @@
         color: #6E5E56; }
       .header .header__container .header__top .header__phone .header__phone__right p:last-child {
         padding-left: 16px;
-        background-image: url("../assets/images/header/phone-background.svg");
+        background-image: url("./assets/images/header/phone-background.svg");
         background-repeat: no-repeat;
         background-position: left center;
         font-weight: medium;

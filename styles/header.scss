@@ -64,7 +64,7 @@
 
                         &:last-child {
                             padding-left: 16px;
-                            background-image: url("../assets/images/header/phone-background.svg");
+                            background-image: url("./assets/images/header/phone-background.svg");
                             background-repeat: no-repeat;
                             background-position: left center;
                             font-weight: medium;
@@ -145,7 +145,6 @@
                         transform: translateY(100%);
                         width: 280px;
                         border-radius: 16px;
-                        // border: 1px solid #EBE9E6;
                         display: none;
 
                         div {

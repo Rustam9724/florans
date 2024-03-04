@@ -1,6 +1,6 @@
 .center {
   padding: 8.2% 0;
-  background-image: url("../assets/images/center/background.jpg");
+  background-image: url("./assets/images/center/background.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
   .center .center__container {

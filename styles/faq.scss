@@ -1,6 +1,6 @@
 .faq {
     padding: 8.2% 0;
-    background-image: url("../assets/images/faq/background.jpg");
+    background-image: url("./assets/images/faq/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -110,7 +110,7 @@
 
             .form-faq {
                 padding: 30px 40px 40px;
-                background-image: url("../assets/images/faq/form-background.jpg");
+                background-image: url("./assets/images/faq/form-background.jpg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 color: white;
@@ -182,7 +182,7 @@
                         display: none;
 
                         &:checked + div {
-                            background-image: url("../assets/images/faq/checkbox.jpg");
+                            background-image: url("./assets/images/faq/checkbox.jpg");
                             background-repeat: no-repeat;
                             background-size: cover;
                         }
