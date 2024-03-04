@@ -597,7 +597,7 @@
   grid-row: 1/2;
   -ms-flex-item-align: stretch;
       align-self: stretch;
-  background-image: url("../assets/images/services/1.jpg");
+  background-image: url("./assets/images/services/1.jpg");
 }
 .services .services__main .services__group._first-group #item-services-2 {
   grid-column: 2/3;
