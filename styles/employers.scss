@@ -1,0 +1,103 @@
+.employers {
+    padding: 8.2% 0;
+
+    .employers__container {
+        
+        .employers__title {
+        }
+
+        .employers__main {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            row-gap: 20px;
+
+            .employer-item {
+                border: 1px solid #EBE9E6;
+                border-radius: 16px;
+                flex-basis: 48%;
+                display: flex;
+                align-items: stretch;
+                background-color: #FAF9F8;
+
+                .employer-item__image {
+                    min-width: 34.5%;
+                    border-radius: 16px;
+                    aspect-ratio: 200/296;
+                    position: relative;
+
+                    img {
+                        border-radius: 16px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .employer-item__main {
+                    padding: 30px 5.2%;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .employer-item__title {
+                        font-weight: 600;
+                        font-size: 2rem;
+                        line-height: 125%;
+                        letter-spacing: -0.2px;
+                        color: #302A26;
+                        margin: 0 0 10px;
+                    }
+
+                    .employer-item__job {
+                        font-weight: 500;
+                        font-size: 1.4rem;
+                        line-height: 155%;
+                        color: rgba(48, 42, 38, 0.6);
+                        margin: 0 0 10px;
+                    }
+
+                    .employer-item__text {
+                        font-size: 1.4rem;
+                        line-height: 155%;
+                        color: #302A26;
+                        flex-grow: 1;
+                    }
+
+                    .employer-item__buttons {
+                        display: flex;
+                        column-gap: 10px;
+
+                        button {
+
+                            &:first-child {
+                                width: 160px;
+                                padding: 18px 0;
+                            }
+
+                            &:last-child {
+                                width: 150px;
+                                padding: 18px;
+                                background-color: white;
+                                border: 1px solid rgba(68, 136, 31, 0.4);
+                                color: #44881F;
+            
+                                &:hover {
+                                    background-color: #62A92D;
+                                    color: white;
+                                }
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
