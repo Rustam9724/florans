@@ -25,12 +25,12 @@
         grid-column: 2/3;
         grid-row: 1/3;
         align-self: stretch;
-        background-image: url("../assets/images/services/2.jpg"); }
+        background-image: url("./assets/images/services/2.jpg"); }
       .services .services__main .services__group._first-group #item-services-3 {
         grid-column: 1/2;
         grid-row: 2/3;
         align-self: stretch;
-        background-image: url("../assets/images/services/3.jpg"); }
+        background-image: url("./assets/images/services/3.jpg"); }
     @media (max-width: 999px) {
       .services .services__main .services__group._first-group {
         grid-template-columns: 45% 50%; } }
@@ -44,11 +44,11 @@
       column-gap: 20px; }
       .services .services__main .services__group._second-group #item-services-4 {
         width: 56%;
-        background-image: url("../assets/images/services/4.jpg");
+        background-image: url("./assets/images/services/4.jpg");
         align-self: stretch; }
       .services .services__main .services__group._second-group #item-services-5 {
         width: 39%;
-        background-image: url("../assets/images/services/5.jpg");
+        background-image: url("./assets/images/services/5.jpg");
         align-self: stretch; }
       @media (max-width: 1199px) {
         .services .services__main .services__group._second-group #item-services-4,
@@ -63,11 +63,11 @@
       column-gap: 20px; }
       .services .services__main .services__group._third-group #item-services-6 {
         width: 48%;
-        background-image: url("../assets/images/services/6.jpg");
+        background-image: url("./assets/images/services/6.jpg");
         align-self: stretch; }
       .services .services__main .services__group._third-group #item-services-7 {
         width: 48%;
-        background-image: url("../assets/images/services/7.jpg");
+        background-image: url("./assets/images/services/7.jpg");
         align-self: stretch; }
       @media (max-width: 874px) {
         .services .services__main .services__group._third-group #item-services-6,
