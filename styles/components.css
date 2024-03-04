@@ -40,10 +40,15 @@
   line-height: 125%;
   letter-spacing: -0.3px;
   color: #302A26;
-  margin: 0 0 40px; }
+  margin: 0 0 40px;
+  max-width: 100%;
+  word-wrap: break-word; }
   .section-title span {
     color: #44881F; }
 
+@media (max-width: 674px) {
+  .section-title {
+    font-size: 2.85rem; } }
 ._link {
   font-weight: 500;
   font-size: 1.4rem;
