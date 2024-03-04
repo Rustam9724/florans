@@ -40,6 +40,16 @@
                     }
                 }
 
+                @media (max-width: 499px) {
+                    .employer-item__image {
+                        aspect-ratio: 296/200;
+
+                        img {
+                            object-position: top;
+                        }
+                    }
+                }
+
                 .employer-item__main {
                     padding: 30px 5.2%;
                     flex-grow: 1;
@@ -69,11 +79,16 @@
                         line-height: 155%;
                         color: #302A26;
                         flex-grow: 1;
+                        margin: 0 0 10px;
+                        word-wrap: break-word;
+                        word-break: normal;
                     }
 
                     .employer-item__buttons {
                         display: flex;
                         column-gap: 10px;
+                        flex-wrap: wrap;
+                        row-gap: 15px;
 
                         button {
 
@@ -96,6 +111,26 @@
                             } 
                         }
                     }
+                }
+            }
+
+            @media (max-width: 1024px) {
+                .employer-item {
+                    flex-basis: 64%;
+                    margin: 0 auto;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .employer-item {
+                    flex-basis: 95%;
+                    margin: 0 auto;
+                }
+            }
+
+            @media (max-width: 499px) {
+                .employer-item {
+                    flex-direction: column;
                 }
             }
         }
