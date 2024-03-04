@@ -1239,6 +1239,13 @@
   padding: 0 0 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 0 0 20px;
+  row-gap: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer .footer__container .footer__top .footer__block {
+  padding-right: 10px;
 }
 .footer .footer__container .footer__top .footer__block .footer__block__title {
   font-weight: 600;
@@ -1252,9 +1259,15 @@
   font-size: 1.6rem;
   line-height: 155%;
   color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .footer .footer__container .footer__top .footer__block .footer__block__list li:not(:last-child) {
   margin: 0 0 8px;
+}
+.footer .footer__container .footer__top .footer__block .footer__block__list li:hover {
+  color: #6FB34A;
+  cursor: pointer;
 }
 .footer .footer__container .footer__top .footer__contacts {
   max-width: 22%;
@@ -1305,6 +1318,31 @@
   -webkit-column-gap: 10px;
           column-gap: 10px;
 }
+@media (max-width: 1049px) {
+  .footer .footer__container .footer__top .footer__contacts {
+    max-width: 29%;
+  }
+}
+@media (max-width: 799px) {
+  .footer .footer__container .footer__top .footer__contacts {
+    max-width: 39%;
+  }
+}
+@media (max-width: 624px) {
+  .footer .footer__container .footer__top .footer__contacts {
+    max-width: 52%;
+  }
+}
+@media (max-width: 474px) {
+  .footer .footer__container .footer__top .footer__contacts {
+    max-width: 69.5%;
+  }
+}
+@media (max-width: 374px) {
+  .footer .footer__container .footer__top .footer__contacts {
+    max-width: 93%;
+  }
+}
 .footer .footer__container .footer__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1317,6 +1355,15 @@
   font-size: 1.6rem;
   line-height: 155%;
   color: white;
+}
+@media (max-width: 724px) {
+  .footer .footer__container .footer__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 *, ul, p, h1, h2, h3, h4, button, body, input, ::before, ::after, div {
