@@ -2,6 +2,7 @@
     background-image: url("./assets/images/welcome-section/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
 
     .welcome-section__container {
         display: flex;
@@ -52,31 +53,6 @@
                 padding: 20.5px 46px;
             }
         }
-
-        .welcome-section__image {
-            width: 49.5%;
-            aspect-ratio: 603/673;
-            position: relative;
-            min-width: 49.5%;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-
-        @media (max-width: 774px) {
-            .welcome-section__image {
-                width: 100%;
-            }
-        }
-        
     }
 
     @media (max-width: 774px) {

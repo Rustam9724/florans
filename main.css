@@ -501,6 +501,7 @@
   background-image: url("./assets/images/welcome-section/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
 }
 .welcome-section .welcome-section__container {
   display: -webkit-box;
@@ -547,28 +548,6 @@
 }
 .welcome-section .welcome-section__container .welcome-section__description .welcome-section__button {
   padding: 20.5px 46px;
-}
-.welcome-section .welcome-section__container .welcome-section__image {
-  width: 49.5%;
-  aspect-ratio: 603/673;
-  position: relative;
-  min-width: 49.5%;
-}
-.welcome-section .welcome-section__container .welcome-section__image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-@media (max-width: 774px) {
-  .welcome-section .welcome-section__container .welcome-section__image {
-    width: 100%;
-  }
 }
 @media (max-width: 774px) {
   .welcome-section .welcome-section__container {
