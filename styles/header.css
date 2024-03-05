@@ -78,7 +78,7 @@
       .header .header__container .header__nav > ul > li a {
         color: #302A26;
         transition: all 0.2s ease-in; }
-      .header .header__container .header__nav > ul > li:hover svg {
+      .header .header__container .header__nav > ul > li:hover > svg {
         transform: rotate(180deg); }
       .header .header__container .header__nav > ul > li:hover a {
         color: #6FB34A; }

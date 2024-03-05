@@ -135,7 +135,7 @@
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-.header .header__container .header__nav > ul > li:hover svg {
+.header .header__container .header__nav > ul > li:hover > svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -903,6 +903,9 @@
 }
 .center .center__container .center__description .center__description__text {
   max-width: 53%;
+}
+.center .center__container .center__description .center__description__text p {
+  line-height: 155%;
 }
 .center .center__container .center__description .center__description__text p:not(:last-child) {
   margin: 0 0 20px;
